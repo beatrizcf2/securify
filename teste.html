@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="teste.css"/>
+  </head>
+
+  <body class="body-panel">
+    <div class="panel">
+        <div class="header">
+            <img class="header-title" src="icons/logo.png" alt="Logo" class="logo">
+            <button class="header-button">X</button>
+        </div>
+        <div class="panel-content">
+            <div class="session connections-session">
+                <div class="connections-header">
+                    <h3>Third Part Connections</h3>
+                </div>
+                <div class="content connections-content">
+                    <p class="count connections-count" id="connections-count"></p>
+                    <p>links to external domains</p>
+                </div>
+                <details class="connections-details">
+                    <summary>Details</summary>
+                    <ul class="connections-list" id="connections-list">
+                    </ul>
+                </details>
+            </div>
+            <div class="session local-storage-session">
+                <div class="local-storage-header">
+                    <h3>Local Storage</h3>
+                </div>
+                <div class="content local-storage-content">
+                    <p class="count local-storage-count" id="storage-count">10</p>
+                    <p>local storages found in your device</p>
+                </div>
+                <details class="storage-details">
+                    <summary>Local Storages Avaiable</summary>
+                    <ul class="local-storage-list" id="local-storage-list">
+                    </ul>
+                </details>
+            </div>
+            <div class="session cookies-session">
+                <div class="cookies-header">
+                    <h3>Cookies</h3>
+                </div>
+                <div class="content cookies-content">
+                    <p class="count cookies" id="cookie-count">10</p>
+                    <p>cookies injected by this website</p>
+                </div>
+                <details class="cookies-details">
+                    <summary>View Cookies Details</summary>
+                    <div class="cookies-list">
+                        <div>
+                            <h3 id="first-title">First Part Cookies</h3>
+                            <ul id="first-cookie-list">
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 id="third-title">Third Part Cookies</h3>
+                            <ul id="third-cookie-list">
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="session privacy-policy-session">
+                <div class="privacy-policy-header">
+                    <h3>Privacy Policy</h3>
+                </div>
+                <div class="content privacy-policy-content">
+                    <img class="privacy-policy-img" src="icons/check (3).png">
+                    <p>This website has a privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="securify.js"></script>
+  </body>
