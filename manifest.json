@@ -2,20 +2,24 @@
     "browser_action": {
       "browser_style": true,
       "default_title": "List cookies in the active tab",
-      "default_popup": "teste.html",
+      "default_popup": "securify.html",
       "default_icon": {
-        "19": "icons/default19.png",
-        "38": "icons/default38.png"
+        "19": "icons/eye-black.png"
       }
     },
     "description": "List cookies in the active tab.",
     "icons": {
-      "48": "icons/cookie.png",
-      "96": "icons/cookie@2x.png"
+      "48": "icons/eye.png"
     },
     "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/list-cookies",
     "manifest_version": 2,
-    "name": "List cookies",
+    "name": "Securify",
     "version": "1.0",
-    "permissions": ["cookies","<all_urls>","tabs"]
+    "permissions": ["cookies","<all_urls>","tabs","storage", "http://*/*", "https://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["securify.js"]
+      }
+    ]
   }

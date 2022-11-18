@@ -29,6 +29,7 @@
     color: aliceblue;
     font-size: 1.6rem;
     margin: 0 0.5rem;
+    border: none;
 }
 
 .header {
@@ -108,5 +109,11 @@ summary, li {
     font-style: bold;
     font-family: "Roboto", sans-serif;
     margin: 0.3rem;
+}
+
+.privacy-policy-img {
+    width: 4rem;
+    height: 4rem;
+    
 }
 
