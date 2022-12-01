@@ -19,8 +19,10 @@ async function FetchHtml(url) {
     let html = await FetchHtml(sourceUrl).then((text) => {
       return text;
     }); // Get html from the promise
+    let p_count = (html.match("politica")|| []).length;
+    
 
-    if (html.includes("policy")) {
+    if ((html.includes("policy")||html.includes("politica")|| html.includes("privacy")||html.includes("privacidad")) && p_count < 3 ) {
       // set src of image
         document.getElementById("privacy-policy-img").src = "icons/check.png";
         document.getElementById("has-policy").textContent = "This website has a privacy policy";
@@ -58,6 +60,8 @@ async function FetchHtml(url) {
     document.getElementById("connections-count").textContent = thirdUrls.length;
   
   }
+
+  
 
   //get active tab to run an callback function.
   //it sends to our callback an array of tab objects

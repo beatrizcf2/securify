@@ -4,6 +4,11 @@ String.prototype.isDomain = function (domain) {
     var re = new RegExp(pat, "i");
     return re.test(this);
   };
+
+  function calculateScore(tabs){
+    alert("Calculating score");
+    return 0;
+  }
   
 
 function showCookiesForTab(tabs) {
@@ -50,6 +55,8 @@ function showCookiesForTab(tabs) {
       }
       //set the couter of cookies
       document.getElementById("cookie-count").textContent = cookies.length;
+      document.getElementById("first-count").textContent = first_count;
+      document.getElementById("third-count").textContent = third_count;
       if (first_count<=0){
           const element = document.getElementById("first-title");
           element.remove();
@@ -58,9 +65,8 @@ function showCookiesForTab(tabs) {
           const element = document.getElementById("third-title");
           element.remove();
       }
-  
+      
     });
-  
   }
 
   //get active tab to run an callback function.
@@ -70,3 +76,4 @@ function showCookiesForTab(tabs) {
   }
   
   getActiveTab().then(showCookiesForTab);
+  
