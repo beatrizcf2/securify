@@ -1,6 +1,6 @@
 # Securify
 
-<img src="icons/"/>
+<img src="icons/eye-black.png" width=150px/>
 
 É uma extensão para Firefox desenvolvida com o intuito de detectar ataques à privacidade do usuário.
 As seguintes features foram implementadas:
